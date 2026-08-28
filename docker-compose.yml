@@ -1,0 +1,10 @@
+services:
+  app-dev:
+    build: .
+    container_name: python_ubuntu_dev
+    volumes:
+      - .:/app  # BIND MOUNT: Espelha a pasta local atual dentro do /app do container
+    ports:
+      - "8888:8888"  # Mapeia a porta do Jupyter Notebook
+    stdin_open: true
+    tty: true

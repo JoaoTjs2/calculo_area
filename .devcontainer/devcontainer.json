@@ -1,0 +1,14 @@
+{
+  "name": "Python Ubuntu Dev Environment",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app-dev",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}
