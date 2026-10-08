@@ -5,16 +5,16 @@ FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 # Atualiza pacotes e instala Python, pip e utilitários do sistema
-RUN apt-get update && apt-get install -y \
-    python3 \
-    python3-pip \
-    python3-dev \
-    git \
-    curl \
-    && rm -rf /var/lib/apt/lists/*
+# RUN apt-get update && apt-get install -y \
+#     python3 \
+#     python3-pip \
+#     python3-dev \
+#     git \
+#     curl \
+#     && rm -rf /var/lib/apt/lists/*
 
 # Instala o Jupyter Notebook e o Kernel Python
-RUN pip3 install --no-cache-dir jupyter notebook ipykernel
+# RUN pip3 install --no-cache-dir jupyter notebook ipykernel
 
 # Configura o diretório de trabalho padrão dentro do container
 WORKDIR /app
